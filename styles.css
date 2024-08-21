@@ -1,0 +1,44 @@
+.gray-bg {
+    background-color: #1f1f1f;
+}
+
+.dark-gray-bg {
+    background-color: #181818;
+}
+
+.white-text {
+    color: white;
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+    height: 100vh;
+}
+
+#profile-icon {
+    height: 3rem;
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: end;
+    margin: 2%;
+}
+
+.content-box {
+    height: 90vh;
+    width: 30vw;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+#task-list {
+    grid-row: 2;
+    grid-row-end: 4;
+}
+
+.control-menu {
+    display: flex;
+}
