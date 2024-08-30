@@ -2,10 +2,9 @@
 :root {
     --primary-bg-color: #1f1f1f;
     --secondary-bg-color: #181818;
-
 }
 
-/* Setting the main layout colors I will use to classes for easy assignment */
+/* Putting the main layout colors I will use in classes for easy assignment */
 .primary-bg {
     background-color: var(--primary-bg-color);
 }
@@ -28,7 +27,7 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-/* Put the profile icon in the top left */
+/* Put the profile icon in the top right */
 #profile-icon {
     height: 3rem;
     grid-row: 1;
@@ -37,7 +36,8 @@ body {
     margin: 2%;
 }
 
-.content-box { /* Content box class to create the housing for features */
+/* Content box class to create the housing for features */
+.content-box { 
     height: 90vh;
     width: 30vw;
     align-self: center;
@@ -46,15 +46,27 @@ body {
 }
 
 /* Task list customization */
-#task-list {
+#task-housing {
     grid-row: 2;
     grid-row-end: 4;
 }
 
 .control-menu { /* Create the layout for feature controls */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 1rem;
     gap: 1rem;
+}
+
+#task-search {
+    color: white;
+    border-radius: 12px;
+    border-color: black;
+    width: 20vw;
+}
+
+#task-search:focus {
+    outline: none;
 }
 
 .control-button {
