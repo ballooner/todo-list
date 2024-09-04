@@ -19,6 +19,7 @@
 
 /* Main body customization */
 body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,7 +59,7 @@ body {
     gap: 1rem;
 }
 
-#task-search {
+.search-bar {
     color: white;
     border-radius: 12px;
     border-color: black;
@@ -71,4 +72,30 @@ body {
 
 .control-button {
     height: 2.5rem;
+}
+
+/* Task Customization */
+.task {
+    background-color: var(--primary-bg-color);
+    margin: 24px;
+    padding: 12px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.task-title {
+    grid-column: 1;
+    margin: 0px;
+}
+
+.task-description {
+    grid-column: 1;
+    font-size: .75rem;
+}
+
+.edit-button {
+    justify-self: end;
+    height: 1.75rem;
 }
